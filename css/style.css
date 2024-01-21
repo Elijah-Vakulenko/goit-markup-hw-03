@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* main styles */
 body {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
@@ -14,62 +15,11 @@ body {
         letter-spacing: 2%;
 }
 
-.container { 
-max-width: 1158px;
-padding-left:  
-padding-right:  
-margin-left:  
-margin-right:  
-}
-
-.container .link {
-    display: flexbox;
-    gap: 8px;
-    justify-content: flex-start;
-    flex-direction: row;
-}
-
 ul {
     list-style-type: none;
 }
 
-.text {
-    font-family: "Roboto",
-        sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 2%;
-    font-style: normal;
-}
-
-.text:hover {
-    color:#404BBF;
-}
-
-.text:focus {
-    color: #404BBF;
-}
-
-.butt {
-    background-color: #4D5AE5;
-    color:#ffffff;
-    cursor: pointer;
-    font-family: "Roboto",
-        sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-}
-
-.butt:focus {
-    background-color: #404BBF;
-}
-
-.butt:hover {
-    background-color: #404BBF;
-}
+/* menu and address section */
 
 a {
     font-family: "Roboto",
@@ -83,12 +33,13 @@ a {
 
 .link {
     color: #2E2F42;
-font-family: "Roboto",
-    sans-serif;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.02em;
+    font-family: "Roboto",
+        sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .list {
@@ -112,25 +63,59 @@ letter-spacing: 0.02em;
 }
 
 .link:focus {
-    color:#404BBF;
+    color: #404BBF;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.top-line {
+    display: flex;
+    flex-direction: row;
 }
 
 .logo {
-    color:#4D5AE5;
+    display: inline-flex;
+        height: 24px;
+        align-items: center;
+        flex-shrink: 0;
+    color: #4D5AE5;
     text-transform: uppercase;
     font-family: "Raleway",
-     sans-serif;
+        sans-serif;
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: 1.17;
     font-weight: 700;
 }
 
+.nav {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .contacts {
+    font-family: "Roboto",
+            sans-serif;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .contacts:hover {
@@ -141,10 +126,63 @@ letter-spacing: 0.02em;
     color: #404BBF;
 }
 
-footer .logo {
-    color: #ffffff;
-    text-transform: uppercase;
+/* hero section */
+
+.hero .container {
+
 }
+
+.hero-title {
+    display: flexbox;
+    width: 120px;
+    width: 496px;
+    align-content: center;
+    justify-content: center;
+    font-family: Roboto;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+  
+}
+
+.butt {
+    display: inline-flex;
+        padding: 16px 32px;
+        justify-items: center;
+        align-items: flex-start;
+        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+            background: var(--IRIS, #4D5AE5);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.butt {
+    background-color: #4D5AE5;
+    color:#ffffff;
+    cursor: pointer;
+    font-family: "Roboto",
+        sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+}
+
+.butt:focus {
+    background-color: #404BBF;
+}
+
+.butt:hover {
+    background-color: #404BBF;
+}
+
+
+
 
 .logo .web-logo{
     color:#2E2F42;
@@ -169,6 +207,8 @@ footer .logo {
     letter-spacing: 0.02em;
 }
 
+/* Services section */
+
 .service {
     color: #2E2F42;
     font-family: "Roboto",
@@ -189,9 +229,37 @@ footer .logo {
         letter-spacing: 0.02em;
 }
 
+.service-block {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 156px;
+    margin-right: 156px;
+}
+
+.service-item {
+    display: flex;
+        width: 264px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+}
+
+
+/* Our team section */
+
+.our-tem .container {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 56px;
+}
+
 .our-team {
     background-color: #F4F4FD;
 }
+
 
 .team {
     color: #2E2F42;
@@ -203,6 +271,17 @@ footer .logo {
 }
 .person {
     background-color: #ffffff;
+    display: inline-flex;
+        padding-bottom: 32px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+    border-radius: 0px 0px 4px 4px;        
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 .person-one {
@@ -223,12 +302,34 @@ footer .logo {
         letter-spacing: 0.02em;
     }
 
+    /* Portfolio */
+
+    .folio-section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
+    }
+
     .portfolio-title {
         font-size: 36px;
         line-height: 1,11;
         text-align: center;
         letter-spacing: 0.02em;
         color: #2E2F42;
+    }
+
+    .folio-item {
+        display: flex;
+            width: 360px;
+            height: 420px;
+            padding-bottom: 32px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            flex-shrink: 0;
+            border: 1px solid var(--CORNFLOWER, #E7E9FC);
+                background: var(--WHITE, #FFF);
     }
 
     .folio-element {
@@ -248,6 +349,9 @@ footer .logo {
     line-height: 1.5;
     letter-spacing: 0.02em;
     }
+
+
+/* footer section */
 
 .bigfoot {
     background-color: #2E2F42;
@@ -280,4 +384,9 @@ footer .logo {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+footer .logo {
+    color: #ffffff;
+    text-transform: uppercase;
 }
