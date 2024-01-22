@@ -54,6 +54,7 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .list:focus {
@@ -241,9 +242,21 @@ a {
 .service-item {
   display: flex;
   flex-direction: column;
+  width: calc((100%-72px)/4);
 }
 
 .visually-hidden {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
 /* OUR TEAM */
