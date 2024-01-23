@@ -235,7 +235,7 @@ a {
 .service-item {
   display: flex;
   flex-direction: column;
-  width: calc((100% - 3 * 24px) / 4);
+  width: 264px;
 }
 
 .service-title {
@@ -252,6 +252,11 @@ a {
 }
 
 /* OUR TEAM */
+
+.our-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .our-team .container {
   display: flex;
@@ -291,7 +296,7 @@ a {
   height: 356px;
 }
 
-.person-container {
+li .person-container {
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
