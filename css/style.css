@@ -225,7 +225,7 @@ img {
 
 .person-container {
   display: flex;
-  width: 232px;
+  width: 264px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
