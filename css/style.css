@@ -96,11 +96,10 @@ img {
 }
 
 .menu-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .link {
+  display: block;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
